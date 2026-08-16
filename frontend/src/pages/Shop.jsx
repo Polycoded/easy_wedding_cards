@@ -9,9 +9,7 @@ import {
   cards,
   categoryCounts,
   useFavorites,
-  getRecentlyViewed,
   slugify,
-  imgUrl,
   PAGE_SIZE,
 } from "../lib/shop";
 
@@ -34,13 +32,6 @@ export default function Shop() {
   const [sort, setSort] = useState("featured");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [showFavorites, setShowFavorites] = useState(false);
-
-  const [recent] = useState(() =>
-    getRecentlyViewed()
-      .map((id) => cards.find((c) => c.id === id))
-      .filter(Boolean)
-      .slice(0, 6),
-  );
 
   useEffect(() => {
     setCategory(urlCategory);
@@ -103,54 +94,31 @@ export default function Shop() {
           </div>
         </div>
 
-        {/* Recently viewed strip */}
-        {recent.length > 0 && (
-          <div className="mt-12 border-y border-espresso/10 bg-cream/50" data-testid="recently-viewed">
-            <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 py-6">
-              <p className="font-sans text-[0.58rem] uppercase tracking-[0.24em] text-taupe mb-4">Recently viewed</p>
-              <div className="flex gap-5 overflow-x-auto pb-1">
-                {recent.map((c) => (
-                  <Link
-                    key={c.id}
-                    to={`/shop/${slugify(c.id)}`}
-                    data-testid={`recent-${slugify(c.id)}`}
-                    className="group shrink-0 w-24 sm:w-28"
-                  >
-                    <div className="aspect-[4/5] overflow-hidden bg-beige">
-                      <img
-                        src={imgUrl(c.images[0])}
-                        alt={c.id}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                    </div>
-                    <p className="mt-2 font-serif text-sm text-espresso leading-tight">{c.id}</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
         {/* Sticky top filter bar */}
         <div className="sticky top-16 md:top-20 z-30 bg-ivory/90 backdrop-blur-md border-b border-espresso/10">
           <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            {/* Category dropdown + sort tiles */}
-            <div className="flex flex-wrap items-center gap-4">
-              <select
-                value={category}
-                onChange={(e) => pickCategory(e.target.value)}
-                data-testid="category-select"
-                aria-label="Category"
-                className="bg-transparent border-b border-espresso/25 pb-1.5 font-sans text-xs text-espresso outline-none cursor-pointer"
-              >
-                {categories.map((c) => (
-                  <option key={c} value={c}>
-                    {c === "All" ? "All Invitations" : c} ({counts[c]})
-                  </option>
-                ))}
-              </select>
+            {/* Category pills (scrollable, hidden scrollbar) + sort tiles */}
+            <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-4">
+              <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 lg:mx-0 lg:px-0">
+                {categories.map((c) => {
+                  const on = category === c;
+                  return (
+                    <button
+                      key={c}
+                      onClick={() => pickCategory(c)}
+                      data-testid={`category-${slugify(c)}`}
+                      className={`shrink-0 border px-4 py-2 font-sans text-[0.6rem] uppercase tracking-[0.16em] transition-colors duration-300 ${
+                        on ? "border-espresso bg-espresso text-cream" : "border-espresso/20 text-espresso hover:border-espresso"
+                      }`}
+                    >
+                      {c === "All" ? "All" : c}
+                      <span className={`ml-1.5 ${on ? "text-cream/60" : "text-taupe/70"}`}>{counts[c]}</span>
+                    </button>
+                  );
+                })}
+              </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 shrink-0">
                 {SORT_OPTIONS.map((s) => {
                   const on = sort === s.value;
                   return (
