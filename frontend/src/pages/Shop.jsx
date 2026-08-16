@@ -129,7 +129,7 @@ export default function Shop() {
         <div className="sticky top-16 md:top-20 z-30 bg-ivory/90 backdrop-blur-md border-b border-espresso/10">
           <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             {/* Category pills */}
-            <div className="flex gap-2 overflow-x-auto -mx-1 px-1 lg:mx-0 lg:px-0">
+            <div className="flex flex-wrap gap-2 -mx-1 px-1 lg:mx-0 lg:px-0">
               {categories.map((c) => {
                 const on = category === c;
                 return (
