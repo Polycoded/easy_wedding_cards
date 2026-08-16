@@ -2,10 +2,9 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
-import { imgUrl, slugify, isPair, unit, money } from "../../lib/shop";
+import { imgUrl, slugify, money } from "../../lib/shop";
 
 export const ProductTile = memo(function ProductTile({ c, isFavorite, onToggleFavorite, testidPrefix = "product-card" }) {
-  const pair = isPair(c);
   return (
     <motion.div
       initial={{ opacity: 0, y: 18 }}
@@ -50,8 +49,7 @@ export const ProductTile = memo(function ProductTile({ c, isFavorite, onToggleFa
           <p className="mt-1.5 font-sans text-[0.55rem] uppercase tracking-[0.2em] text-rose">{c.category}</p>
         </div>
         <p className="font-sans text-xs text-espresso whitespace-nowrap">
-          {money(unit(c.price, pair))}
-          <span className="text-taupe">{pair ? " /pair" : ""}</span>
+          {money(c.price)}
         </p>
       </div>
     </Link>

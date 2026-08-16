@@ -12,9 +12,8 @@ import {
   cards,
   getCardBySlug,
   slugify,
-  isPair,
-  unit,
   money,
+  imgUrl,
   useFavorites,
   getRecentlyViewed,
   addRecentlyViewed,
@@ -83,7 +82,6 @@ export default function ProductDetail() {
     );
   }
 
-  const pair = isPair(card);
   const activeVar = card.variants?.[variantIdx];
   const basePrice = activeVar?.price ?? card.price;
 
@@ -91,13 +89,18 @@ export default function ProductDetail() {
   const prev = catIndex > 0 ? cards[catIndex - 1] : null;
   const next = catIndex >= 0 && catIndex < cards.length - 1 ? cards[catIndex + 1] : null;
   const PRINTING = {
-    Embossed: "Blind embossing",
-    Foil: "Matte foil",
-    Floral: "Letterpress",
-    Botanical: "Letterpress",
-    Minimal: "Debossed",
-    Classic: "Engraved",
-    Duo: "Embossing & wax seal",
+    "The Heritage Edit": "Blind embossing",
+    "The Floral Edit": "Letterpress",
+    "The Minimal Edit": "Debossed",
+    "The Vellum Edit": "Matte foil",
+    "The Craft Edit": "Letterpress",
+    "The Traditional Edit": "Engraved",
+    "The Pouch Edit": "Embossing & wax seal",
+    "The Square Edit": "Engraved",
+    "The UHP Edit": "Letterpress",
+    "The Open Edit": "Embossing & wax seal",
+    "The Book Edit": "Engraved",
+    "The Portrait Edit": "Debossed",
   };
   const printing = PRINTING[card.category] || "Letterpress";
 
@@ -144,7 +147,7 @@ export default function ProductDetail() {
                 className="block w-full"
               >
                 <div className="relative aspect-[4/5] overflow-hidden bg-cream">
-                  <img src={card.images[imageIdx]} alt={card.id} className="h-full w-full object-cover" />
+                  <img src={imgUrl(card.images[imageIdx])} alt={card.id} className="h-full w-full object-cover" />
                   <span className="absolute bottom-3 right-3 bg-ivory/85 px-3 py-1 font-sans text-[0.52rem] uppercase tracking-[0.16em] text-espresso">
                     Tap to enlarge
                   </span>
@@ -161,7 +164,7 @@ export default function ProductDetail() {
                         idx === imageIdx ? "border-espresso" : "border-espresso/15 hover:border-espresso/40"
                       }`}
                     >
-                      <img src={src} alt="" className="h-full w-full object-cover" />
+                      <img src={imgUrl(src)} alt="" className="h-full w-full object-cover" />
                     </button>
                   ))}
                 </div>
@@ -189,9 +192,9 @@ export default function ProductDetail() {
 
               <div className="mt-5 flex items-baseline gap-2">
                 <span className="font-serif text-4xl text-espresso" data-testid="detail-price">
-                  {money(unit(basePrice, pair))}
+                  {money(basePrice)}
                 </span>
-                <span className="font-sans text-xs text-taupe">{pair ? "/ pair · 2 cards" : "/ card"}</span>
+                <span className="font-sans text-xs text-taupe">/ card</span>
               </div>
 
               {card.description && (
@@ -234,7 +237,7 @@ export default function ProductDetail() {
                         >
                           <span className="block font-sans text-xs text-espresso">{v.name || v.size}</span>
                           <span className="block font-sans text-[0.62rem] text-taupe mt-0.5">
-                            {money(unit(v.price, pair))} {pair ? "/ pair" : "/ card"}
+                            {money(v.price)} / card
                           </span>
                         </button>
                       );
@@ -394,7 +397,7 @@ export default function ProductDetail() {
                   >
                     <div className="aspect-[4/5] overflow-hidden bg-beige">
                       <img
-                        src={c.images[0]}
+                        src={imgUrl(c.images[0])}
                         alt={c.id}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />

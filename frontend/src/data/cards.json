@@ -1,198 +1,236 @@
 [
   {
     "id": "The Amara",
-    "category": "Embossed",
+    "category": "The Heritage Edit",
     "price": 85,
     "featured": true,
     "description": "A serene ivory invitation with crisp blind embossing and a whisper of dusty rose. Understated, tactile and timeless.",
     "size": "5\" × 7\"",
     "material": "Cotton Savoy 300gsm",
     "images": [
-      "/images/a41ccce608f3ddce42bd425dcf4da4e99e3963065d178a1b23181ce98e9bbcf2.jpeg",
-      "/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg"
+      "src/assets/cards/display/the-amara-1.jpeg",
+      "src/assets/cards/display/the-amara-2.jpeg"
     ],
     "variants": [
-      { "name": "Single Card", "size": "5\" × 7\"", "material": "Cotton Savoy 300gsm", "price": 85 },
-      { "name": "With Envelope", "size": "5.5\" × 7.5\"", "material": "Cotton Savoy + Vellum", "price": 110 }
+      {
+        "name": "Single Card",
+        "size": "5\" × 7\"",
+        "material": "Cotton Savoy 300gsm",
+        "price": 85
+      },
+      {
+        "name": "With Envelope",
+        "size": "5.5\" × 7.5\"",
+        "material": "Cotton Savoy + Vellum",
+        "price": 110
+      }
     ]
   },
   {
     "id": "The Celeste",
-    "category": "Floral",
+    "category": "The Floral Edit",
     "price": 95,
     "featured": true,
     "description": "Soft pressed botanicals in blush letterpress. Romantic without ever tipping into ornate.",
     "size": "5\" × 7\"",
     "material": "Textured Rag 320gsm",
     "images": [
-      "/images/4ca8e6ae223bc80b4fd485ee48293e397321f8288761e10de96822bc16ce4cd2.jpeg",
-      "/images/b65a74adaf7898222d682656a13d90bfe7b097328597f0727714bd774bd88e41.jpeg"
+      "src/assets/cards/display/the-celeste-1.jpeg",
+      "src/assets/cards/display/the-celeste-2.jpeg"
     ]
   },
   {
     "id": "The Noa",
-    "category": "Minimal",
+    "category": "The Minimal Edit",
     "price": 70,
     "featured": false,
     "description": "Heavy deckled-edge cotton with a single line of modern type. For the couple who love quiet things.",
     "size": "5\" × 7\"",
     "material": "Handmade Deckle 350gsm",
     "images": [
-      "/images/74e7812a18baaf97174a8215d5514aeb70e434b9ac86f03c203bf69490edb345.jpeg"
+      "src/assets/cards/display/the-noa-1.jpeg"
     ]
   },
   {
     "id": "The Elodie",
-    "category": "Foil",
+    "category": "The Vellum Edit",
     "price": 120,
     "featured": true,
     "description": "Champagne-blush paper finished with a matte rose-gold script. Gentle shimmer, never gaudy.",
     "size": "5\" × 7.5\"",
     "material": "Pearl Stock 300gsm",
     "images": [
-      "/images/506e64c9fae8906c4fa4690b11f1fee48d8b95d3e817eb66bd18cfba5828a67c.jpeg",
-      "/images/986d285ff5cc2c8de56e0f65630a7f0ea0a2edb35e0b985b276a5cc138632774.jpeg"
+      "src/assets/cards/display/the-elodie-1.jpeg",
+      "src/assets/cards/display/the-elodie-2.jpeg"
     ],
     "variants": [
-      { "name": "Rose Gold Foil", "material": "Pearl Stock 300gsm", "price": 120 },
-      { "name": "Blush Foil", "material": "Pearl Stock 300gsm", "price": 120 },
-      { "name": "Antique Silver", "material": "Pearl Stock 300gsm", "price": 130 }
+      {
+        "name": "Rose Gold Foil",
+        "material": "Pearl Stock 300gsm",
+        "price": 120
+      },
+      {
+        "name": "Blush Foil",
+        "material": "Pearl Stock 300gsm",
+        "price": 120
+      },
+      {
+        "name": "Antique Silver",
+        "material": "Pearl Stock 300gsm",
+        "price": 130
+      }
     ]
   },
   {
     "id": "The Camille",
-    "category": "Botanical",
+    "category": "The Craft Edit",
     "price": 90,
     "featured": false,
     "description": "Pearl-white card with softly pressed leaves and a blush hush. Botanical calm for a garden celebration.",
     "size": "5\" × 7\"",
     "material": "Pearl Rag 300gsm",
     "images": [
-      "/images/b65a74adaf7898222d682656a13d90bfe7b097328597f0727714bd774bd88e41.jpeg",
-      "/images/4ca8e6ae223bc80b4fd485ee48293e397321f8288761e10de96822bc16ce4cd2.jpeg"
+      "src/assets/cards/display/the-camille-1.jpeg",
+      "src/assets/cards/display/the-camille-2.jpeg"
     ]
   },
   {
     "id": "The Aurelia",
-    "category": "Embossed",
+    "category": "The Traditional Edit",
     "price": 100,
     "featured": true,
     "description": "A classic engraved wreath, timeless and warm. The invitation your guests will keep.",
     "size": "5\" × 7.5\"",
     "material": "Cotton Savoy 350gsm",
     "images": [
-      "/images/c4158f051a6092c76ab32e51662cc50fd0eb64aa0db5a986d753f45ba416cf80.jpeg",
-      "/images/421ebd00310f8b203f4f7bd61e5730aaf4685fdb441fc6a830e1c1abf93cc4d2.jpeg"
+      "src/assets/cards/display/the-aurelia-1.jpeg",
+      "src/assets/cards/display/the-aurelia-2.jpeg"
     ]
   },
   {
     "id": "The Solene",
-    "category": "Foil",
+    "category": "The Pouch Edit",
     "price": 135,
     "featured": false,
     "description": "An editorial envelope suite sealed with a dusty-rose wax monogram. First impressions, perfected.",
     "size": "5.5\" × 7.5\"",
     "material": "Cotton + Wax Seal",
     "images": [
-      "/images/986d285ff5cc2c8de56e0f65630a7f0ea0a2edb35e0b985b276a5cc138632774.jpeg",
-      "/images/506e64c9fae8906c4fa4690b11f1fee48d8b95d3e817eb66bd18cfba5828a67c.jpeg"
+      "src/assets/cards/display/the-solene-1.jpeg",
+      "src/assets/cards/display/the-solene-2.jpeg"
     ],
     "variants": [
-      { "name": "Blush Wax Seal", "material": "Cotton + Wax Seal", "price": 135 },
-      { "name": "Ivory Wax Seal", "material": "Cotton + Wax Seal", "price": 135 }
+      {
+        "name": "Blush Wax Seal",
+        "material": "Cotton + Wax Seal",
+        "price": 135
+      },
+      {
+        "name": "Ivory Wax Seal",
+        "material": "Cotton + Wax Seal",
+        "price": 135
+      }
     ]
   },
   {
     "id": "The Rosea",
-    "category": "Floral",
+    "category": "The Floral Edit",
     "price": 88,
     "featured": false,
     "description": "Watercolour roses bleeding softly into ivory cotton. Painterly, delicate, unmistakably romantic.",
     "size": "5\" × 7\"",
     "material": "Watercolour Rag 300gsm",
     "images": [
-      "/images/9178914879a66ae232f591d566ffce5faf78dfb9e00981c2b6fd9fe3ad90dc20.jpeg",
-      "/images/4ca8e6ae223bc80b4fd485ee48293e397321f8288761e10de96822bc16ce4cd2.jpeg"
+      "src/assets/cards/display/the-rosea-1.jpeg",
+      "src/assets/cards/display/the-rosea-2.jpeg"
     ]
   },
   {
     "id": "The Lin",
-    "category": "Minimal",
+    "category": "The Minimal Edit",
     "price": 65,
     "featured": false,
     "description": "Bare linen-pressed card, one name, all the space in the world. Modern restraint.",
     "size": "5\" × 7\"",
     "material": "Linen Press 300gsm",
     "images": [
-      "/images/74e7812a18baaf97174a8215d5514aeb70e434b9ac86f03c203bf69490edb345.jpeg",
-      "/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg"
+      "src/assets/cards/display/the-lin-1.jpeg",
+      "src/assets/cards/display/the-lin-2.jpeg"
     ]
   },
   {
     "id": "The Marguerite",
-    "category": "Classic",
+    "category": "The Square Edit",
     "price": 110,
     "featured": true,
     "description": "A traditional engraved suite with a filigree border, reimagined in warm ivory. Heritage, softened.",
     "size": "5\" × 7.5\"",
     "material": "Cotton Savoy 350gsm",
     "images": [
-      "/images/c4158f051a6092c76ab32e51662cc50fd0eb64aa0db5a986d753f45ba416cf80.jpeg"
+      "src/assets/cards/display/the-marguerite-1.jpeg"
     ]
   },
   {
     "id": "The Fern",
-    "category": "Botanical",
+    "category": "The UHP Edit",
     "price": 92,
     "featured": false,
     "description": "Eucalyptus and dried stems pressed against handmade paper. Bring the garden to the table.",
     "size": "5\" × 7\"",
     "material": "Handmade Deckle 320gsm",
     "images": [
-      "/images/421ebd00310f8b203f4f7bd61e5730aaf4685fdb441fc6a830e1c1abf93cc4d2.jpeg",
-      "/images/b65a74adaf7898222d682656a13d90bfe7b097328597f0727714bd774bd88e41.jpeg"
+      "src/assets/cards/display/the-fern-1.jpeg",
+      "src/assets/cards/display/the-fern-2.jpeg"
     ]
   },
   {
     "id": "The Adelaide",
-    "category": "Duo",
+    "category": "The Open Edit",
     "price": 95,
     "featured": true,
-    "description": "Our signature paired suite — a matching bride & groom invitation, sold as a pair. Embossed wreath, wax seal and soft rose ribbon.",
+    "description": "Our signature suite — an embossed wreath, wax seal and soft rose ribbon. First impressions, perfected.",
     "size": "5\" × 7.5\"",
     "material": "Cotton + Wax Seal",
     "images": [
-      "/images/986d285ff5cc2c8de56e0f65630a7f0ea0a2edb35e0b985b276a5cc138632774.jpeg",
-      "/images/a41ccce608f3ddce42bd425dcf4da4e99e3963065d178a1b23181ce98e9bbcf2.jpeg"
+      "src/assets/cards/display/the-adelaide-1.jpeg",
+      "src/assets/cards/display/the-adelaide-2.jpeg"
     ],
     "variants": [
-      { "name": "Rose Ribbon", "material": "Cotton + Wax Seal", "price": 95 },
-      { "name": "Ivory Ribbon", "material": "Cotton + Wax Seal", "price": 95 }
+      {
+        "name": "Rose Ribbon",
+        "material": "Cotton + Wax Seal",
+        "price": 95
+      },
+      {
+        "name": "Ivory Ribbon",
+        "material": "Cotton + Wax Seal",
+        "price": 95
+      }
     ]
   },
   {
     "id": "The Verona",
-    "category": "Classic",
+    "category": "The Book Edit",
     "price": 105,
     "featured": false,
     "description": "An Italianate engraved crest on warm cream. Quietly grand, made for an evening celebration.",
     "size": "5\" × 7.5\"",
     "material": "Cotton Savoy 350gsm",
     "images": [
-      "/images/421ebd00310f8b203f4f7bd61e5730aaf4685fdb441fc6a830e1c1abf93cc4d2.jpeg"
+      "src/assets/cards/display/the-verona-1.jpeg"
     ]
   },
   {
     "id": "The Pearl",
-    "category": "Embossed",
+    "category": "The Portrait Edit",
     "price": 98,
     "featured": false,
     "description": "Subtle pearl-ivory embossing with a debossed monogram. Understated luxury you can feel.",
     "size": "5\" × 7\"",
     "material": "Pearl Rag 320gsm",
     "images": [
-      "/images/82e1240c9c07d91ab04588461dce7ff8e2af4b48df91ef19fee5c73aa5503d02.jpeg",
-      "/images/c4158f051a6092c76ab32e51662cc50fd0eb64aa0db5a986d753f45ba416cf80.jpeg"
+      "src/assets/cards/display/the-pearl-1.jpeg",
+      "src/assets/cards/display/the-pearl-2.jpeg"
     ]
   }
 ]

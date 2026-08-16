@@ -11,6 +11,7 @@ import {
   useFavorites,
   getRecentlyViewed,
   slugify,
+  imgUrl,
   PAGE_SIZE,
 } from "../lib/shop";
 
@@ -111,7 +112,7 @@ export default function Shop() {
                   >
                     <div className="aspect-[4/5] overflow-hidden bg-beige">
                       <img
-                        src={c.images[0]}
+                        src={imgUrl(c.images[0])}
                         alt={c.id}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
