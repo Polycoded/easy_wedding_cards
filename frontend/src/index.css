@@ -66,6 +66,14 @@ body {
     transform: scaleX(1);
 }
 
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
 .arrow-move {
     display: inline-block;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
