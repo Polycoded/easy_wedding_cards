@@ -13,12 +13,6 @@ import {
   PAGE_SIZE,
 } from "../lib/shop";
 
-const SORT_OPTIONS = [
-  { value: "featured", label: "Featured" },
-  { value: "price-asc", label: "Price: Low to High" },
-  { value: "price-desc", label: "Price: High to Low" },
-];
-
 export default function Shop() {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlCategory = searchParams.get("category") || "All";
@@ -97,50 +91,27 @@ export default function Shop() {
         {/* Sticky top filter bar */}
         <div className="sticky top-16 md:top-20 z-30 bg-ivory/90 backdrop-blur-md border-b border-espresso/10">
           <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            {/* Category pills (scrollable, hidden scrollbar) */}
-            <div className="flex flex-col gap-3">
-              <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 lg:mx-0 lg:px-0">
-                {categories.map((c) => {
-                  const on = category === c;
-                  return (
-                    <button
-                      key={c}
-                      onClick={() => pickCategory(c)}
-                      data-testid={`category-${slugify(c)}`}
-                      className={`shrink-0 border px-4 py-2 font-sans text-[0.6rem] uppercase tracking-[0.16em] transition-colors duration-300 ${
-                        on ? "border-espresso bg-espresso text-cream" : "border-espresso/20 text-espresso hover:border-espresso"
-                      }`}
-                    >
-                      {c === "All" ? "All" : c}
-                      <span className={`ml-1.5 ${on ? "text-cream/60" : "text-taupe/70"}`}>{counts[c]}</span>
-                    </button>
-                  );
-                })}
-              </div>
-
-              <div className="flex items-center gap-2 shrink-0">
-                {SORT_OPTIONS.map((s) => {
-                  const on = sort === s.value;
-                  return (
-                    <button
-                      key={s.value}
-                      onClick={() => {
-                        setSort(s.value);
-                        setVisible(PAGE_SIZE);
-                      }}
-                      data-testid={`sort-${s.value}`}
-                      className={`shrink-0 border px-3 py-1.5 font-sans text-[0.6rem] uppercase tracking-[0.14em] transition-colors duration-300 ${
-                        on ? "border-espresso bg-espresso text-cream" : "border-espresso/20 text-espresso hover:border-espresso"
-                      }`}
-                    >
-                      {s.label}
-                    </button>
-                  );
-                })}
-              </div>
+            {/* Category pills */}
+            <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 lg:mx-0 lg:px-0">
+              {categories.map((c) => {
+                const on = category === c;
+                return (
+                  <button
+                    key={c}
+                    onClick={() => pickCategory(c)}
+                    data-testid={`category-${slugify(c)}`}
+                    className={`shrink-0 border px-4 py-2 font-sans text-[0.6rem] uppercase tracking-[0.16em] transition-colors duration-300 ${
+                      on ? "border-espresso bg-espresso text-cream" : "border-espresso/20 text-espresso hover:border-espresso"
+                    }`}
+                  >
+                    {c === "All" ? "All" : c}
+                    <span className={`ml-1.5 ${on ? "text-cream/60" : "text-taupe/70"}`}>{counts[c]}</span>
+                  </button>
+                );
+              })}
             </div>
 
-            {/* Search + saved */}
+            {/* Search + sort + saved */}
             <div className="flex items-center gap-4 shrink-0">
               <div className="flex items-center gap-2 border-b border-espresso/25 pb-1.5">
                 <Search size={14} strokeWidth={1.5} className="text-taupe" />
@@ -156,6 +127,21 @@ export default function Shop() {
                   className="w-24 md:w-36 bg-transparent outline-none font-sans text-xs text-espresso placeholder:text-taupe/60"
                 />
               </div>
+
+              <select
+                value={sort}
+                onChange={(e) => {
+                  setSort(e.target.value);
+                  setVisible(PAGE_SIZE);
+                }}
+                data-testid="sort-select"
+                aria-label="Sort"
+                className="bg-transparent border-b border-espresso/25 pb-1.5 font-sans text-xs text-espresso outline-none cursor-pointer"
+              >
+                <option value="featured">Sort: Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
 
               <button
                 onClick={() => {
