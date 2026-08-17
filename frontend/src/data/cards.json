@@ -1,5 +1,40 @@
 [
   {
+    "id": "test two",
+    "category": "test category",
+    "price": 100,
+    "featured": false,
+    "minOrder": 100,
+    "size": "15 CM X 21 CM",
+    "material": "230 GSM BLUE + 260 GSM OFF WHITE",
+    "description": "bbbbb",
+    "instagram_url": "",
+    "extraCharges": [],
+    "applyWatermark": true,
+    "watermarkPos": "center",
+    "watermarkSize": "medium",
+    "watermarkColor": "#ff0000",
+    "images": [
+      "frontend/src/assets/cards/display/test-two-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/test-two-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 4,
+        "material_id": 4,
+        "size": "15 CM X 21 CM",
+        "material": "230 GSM BLUE + 260 GSM OFF WHITE",
+        "price": 100
+      }
+    ]
+  },
+  {
     "id": "The Amara",
     "category": "The Heritage Edit",
     "price": 85,
