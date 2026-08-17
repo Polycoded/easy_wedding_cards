@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import { imgUrl } from "../../lib/shop";
+import { displayUrl } from "../../lib/shop";
 
 export function GalleryLightbox({ images, index, setIndex, onClose, alt }) {
   useEffect(() => {
@@ -41,7 +41,7 @@ export function GalleryLightbox({ images, index, setIndex, onClose, alt }) {
       </button>
 
       <img
-        src={imgUrl(images[index])}
+        src={displayUrl(images[index])}
         alt={alt}
         onClick={(e) => e.stopPropagation()}
         className="max-h-[85vh] max-w-[90vw] object-contain"

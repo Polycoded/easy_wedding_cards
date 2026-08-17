@@ -13,7 +13,8 @@ import {
   getCardBySlug,
   slugify,
   money,
-  imgUrl,
+  thumbUrl,
+  displayUrl,
   useFavorites,
   getRecentlyViewed,
   addRecentlyViewed,
@@ -147,7 +148,7 @@ export default function ProductDetail() {
                 className="block w-full"
               >
                 <div className="relative aspect-[4/5] overflow-hidden bg-cream">
-                  <img src={imgUrl(card.images[imageIdx])} alt={card.id} className="h-full w-full object-cover" />
+                  <img src={displayUrl(card.images[imageIdx])} alt={card.id} className="h-full w-full object-cover" />
                   <span className="absolute bottom-3 right-3 bg-ivory/85 px-3 py-1 font-sans text-[0.52rem] uppercase tracking-[0.16em] text-espresso">
                     Tap to enlarge
                   </span>
@@ -164,7 +165,7 @@ export default function ProductDetail() {
                         idx === imageIdx ? "border-espresso" : "border-espresso/15 hover:border-espresso/40"
                       }`}
                     >
-                      <img src={imgUrl(src)} alt="" className="h-full w-full object-cover" />
+                      <img src={thumbUrl(src)} alt="" className="h-full w-full object-cover" />
                     </button>
                   ))}
                 </div>
@@ -397,7 +398,7 @@ export default function ProductDetail() {
                   >
                     <div className="aspect-[4/5] overflow-hidden bg-beige">
                       <img
-                        src={imgUrl(c.images[0])}
+                        src={thumbUrl(c.images[0])}
                         alt={c.id}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />

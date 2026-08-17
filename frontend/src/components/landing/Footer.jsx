@@ -2,8 +2,6 @@ import { IMAGES } from "../../data/landing";
 
 const LINKS = [
   { label: "Wedding Cards", href: "/shop" },  { label: "Gifts", href: "/gifts" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
   { label: "Instagram", href: "https://instagram.com" },
 ];
 

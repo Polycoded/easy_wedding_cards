@@ -6,8 +6,6 @@ import { IMAGES } from "../../data/landing";
 const NAV = [
   { label: "Wedding Cards", href: "/shop", primary: true },
   { label: "Gifts", href: "/gifts" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export const Header = ({ heroLogo = false }) => {

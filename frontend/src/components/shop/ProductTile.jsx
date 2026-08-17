@@ -2,7 +2,7 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
-import { imgUrl, slugify, money } from "../../lib/shop";
+import { thumbUrl, slugify, money } from "../../lib/shop";
 
 export const ProductTile = memo(function ProductTile({ c, isFavorite, onToggleFavorite, testidPrefix = "product-card" }) {
   return (
@@ -19,7 +19,7 @@ export const ProductTile = memo(function ProductTile({ c, isFavorite, onToggleFa
       >
       <div className="relative overflow-hidden aspect-[4/5] bg-cream">
         <img
-          src={imgUrl(c.images[0])}
+          src={thumbUrl(c.images[0])}
           alt={c.id}
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-[1.05]"
