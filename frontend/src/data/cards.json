@@ -1,48 +1,5 @@
 [
   {
-    "id": "THREE FOLDING",
-    "category": "The Open Edit",
-    "price": 25,
-    "featured": false,
-    "size": "17 × 17 cm",
-    "material": "300 GSM Paper",
-    "description": "",
-    "applyWatermark": true,
-    "watermarkPos": "bottom-right",
-    "watermarkSize": "medium",
-    "watermarkColor": "#ffd700",
-    "images": [
-      "frontend/src/assets/cards/display/three-folding-1.png",
-      "frontend/src/assets/cards/display/three-folding-2.png",
-      "frontend/src/assets/cards/display/three-folding-3.png"
-    ],
-    "originals": [
-      "frontend/src/assets/cards/originals/three-folding-1.png",
-      "frontend/src/assets/cards/originals/three-folding-2.png",
-      "frontend/src/assets/cards/originals/three-folding-3.png"
-    ],
-    "imageWatermarks": [
-      {
-        "apply": true,
-        "pos": "bottom-right",
-        "size": "medium",
-        "color": "#ffffff"
-      },
-      null,
-      null
-    ],
-    "variants": [
-      {
-        "name": "",
-        "size_id": 1,
-        "material_id": 3,
-        "size": "17 × 17 cm",
-        "material": "300 GSM Paper",
-        "price": 25
-      }
-    ]
-  },
-  {
     "id": "ACRILIC",
     "category": "The UHP Edit",
     "price": 45,
