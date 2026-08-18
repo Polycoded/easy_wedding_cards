@@ -258,7 +258,7 @@ export default function ProductDetail() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="detail-instagram"
-                className="group mt-10 inline-flex items-center gap-4"
+                className="group mt-10 flex w-fit items-center gap-4"
               >
                 <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-espresso transition-colors group-hover:bg-espresso">
                   <Instagram size={22} strokeWidth={1.4} className="text-espresso transition-colors group-hover:text-cream" />
@@ -273,7 +273,7 @@ export default function ProductDetail() {
 
               <Link
                 to="/shop"
-                className="mt-8 inline-flex items-center gap-2 font-sans text-[0.62rem] uppercase tracking-[0.18em] text-taupe hover:text-espresso transition-colors"
+                className="mt-8 flex w-fit items-center gap-2 font-sans text-[0.62rem] uppercase tracking-[0.18em] text-taupe hover:text-espresso transition-colors"
               >
                 <ArrowLeft size={13} strokeWidth={1.5} /> Back to all invitations
               </Link>
