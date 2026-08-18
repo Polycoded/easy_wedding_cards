@@ -89,21 +89,6 @@ export default function ProductDetail() {
   const catIndex = cards.findIndex((c) => c.id === card.id);
   const prev = catIndex > 0 ? cards[catIndex - 1] : null;
   const next = catIndex >= 0 && catIndex < cards.length - 1 ? cards[catIndex + 1] : null;
-  const PRINTING = {
-    "The Heritage Edit": "Blind embossing",
-    "The Floral Edit": "Letterpress",
-    "The Minimal Edit": "Debossed",
-    "The Vellum Edit": "Matte foil",
-    "The Craft Edit": "Letterpress",
-    "The Traditional Edit": "Engraved",
-    "The Pouch Edit": "Embossing & wax seal",
-    "The Square Edit": "Engraved",
-    "The UHP Edit": "Letterpress",
-    "The Open Edit": "Embossing & wax seal",
-    "The Book Edit": "Engraved",
-    "The Portrait Edit": "Debossed",
-  };
-  const printing = PRINTING[card.category] || "Letterpress";
 
   const shareCard = async () => {
     const url = `${window.location.origin}/shop/${slugify(card.id)}`;
@@ -266,16 +251,25 @@ export default function ProductDetail() {
                 >
                   <Share2 size={14} strokeWidth={1.5} /> Share
                 </button>
-                <a
-                  href="https://www.instagram.com/cardseasy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="detail-instagram"
-                  className="inline-flex items-center justify-center gap-2 border border-espresso px-6 py-4 font-sans text-[0.68rem] uppercase tracking-[0.2em] text-espresso transition-colors hover:bg-espresso hover:text-cream"
-                >
-                  <Instagram size={14} strokeWidth={1.5} /> Instagram
-                </a>
               </div>
+
+              <a
+                href="https://www.instagram.com/cardseasy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="detail-instagram"
+                className="group mt-10 inline-flex items-center gap-4"
+              >
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-espresso transition-colors group-hover:bg-espresso">
+                  <Instagram size={22} strokeWidth={1.4} className="text-espresso transition-colors group-hover:text-cream" />
+                </span>
+                <span>
+                  <span className="block font-serif italic text-2xl md:text-3xl text-espresso">Follow us on Instagram</span>
+                  <span className="mt-0.5 block font-sans text-[0.62rem] uppercase tracking-[0.24em] text-taupe">
+                    @cardseasy
+                  </span>
+                </span>
+              </a>
 
               <Link
                 to="/shop"
@@ -322,9 +316,6 @@ export default function ProductDetail() {
               {[
                 ["Paper", activeVar?.material ?? card.material ?? "Cotton rag 300gsm"],
                 ["Dimensions", activeVar?.size ?? card.size ?? '5" × 7"'],
-                ["Printing", printing],
-                ["Envelope", "Included · hand-lined"],
-                ["Made to order", "5–7 days"],
               ].map(([k, v]) => (
                 <div key={k} className="flex items-center justify-between py-4">
                   <dt className="font-sans text-[0.62rem] uppercase tracking-[0.18em] text-taupe">{k}</dt>
