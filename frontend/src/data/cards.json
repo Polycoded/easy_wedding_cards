@@ -20,7 +20,7 @@
     "imageWatermarks": [
       {
         "apply": true,
-        "pos": "middle-right",
+        "pos": "bottom-right",
         "size": "medium",
         "color": "#515101"
       }
