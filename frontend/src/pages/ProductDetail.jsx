@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Heart, Share2, ArrowUpRight, ArrowLeft, ArrowRight, Feather, Clock, Sparkles } from "lucide-react";
+import { Heart, Share2, ArrowUpRight, ArrowLeft, ArrowRight, Feather, Clock, Instagram } from "lucide-react";
 import { toast } from "sonner";
 import { Toaster } from "../components/ui/sonner";
 import { Header } from "../components/landing/Header";
@@ -266,6 +266,15 @@ export default function ProductDetail() {
                 >
                   <Share2 size={14} strokeWidth={1.5} /> Share
                 </button>
+                <a
+                  href="https://www.instagram.com/cardseasy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="detail-instagram"
+                  className="inline-flex items-center justify-center gap-2 border border-espresso px-6 py-4 font-sans text-[0.68rem] uppercase tracking-[0.2em] text-espresso transition-colors hover:bg-espresso hover:text-cream"
+                >
+                  <Instagram size={14} strokeWidth={1.5} /> Instagram
+                </a>
               </div>
 
               <Link
@@ -279,13 +288,12 @@ export default function ProductDetail() {
 
           {/* Assurance */}
           <div
-            className="mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 border-y border-espresso/10 py-8"
+            className="mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-8 border-y border-espresso/10 py-8"
             data-testid="assurance-strip"
           >
             {[
               { Icon: Feather, t: "Handcrafted to order", s: "Each suite is made for you, by hand." },
               { Icon: Clock, t: "Ready in 5–7 days", s: "Carefully produced and quality-checked." },
-              { Icon: Sparkles, t: "Samples on request", s: "Feel the paper before you decide." },
             ].map(({ Icon, t, s }) => (
               <div key={t} className="flex items-start gap-3">
                 <Icon size={20} strokeWidth={1.3} className="text-rose mt-0.5 shrink-0" />

@@ -2,7 +2,7 @@ import { IMAGES } from "../../data/landing";
 
 const LINKS = [
   { label: "Wedding Cards", href: "/shop" },  { label: "Gifts", href: "/gifts" },
-  { label: "Instagram", href: "https://instagram.com" },
+  { label: "Instagram", href: "https://www.instagram.com/cardseasy/" },
 ];
 
 export const Footer = () => {

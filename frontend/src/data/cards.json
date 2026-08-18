@@ -8,8 +8,8 @@
     "size": "5\" × 7\"",
     "material": "Cotton Savoy 300gsm",
     "images": [
-      "src/assets/cards/display/the-amara-1.jpeg",
-      "src/assets/cards/display/the-amara-2.jpeg"
+      "frontend/src/assets/cards/display/the-amara-1.jpeg",
+      "frontend/src/assets/cards/display/the-amara-2.jpeg"
     ],
     "variants": [
       {
@@ -35,8 +35,8 @@
     "size": "5\" × 7\"",
     "material": "Textured Rag 320gsm",
     "images": [
-      "src/assets/cards/display/the-celeste-1.jpeg",
-      "src/assets/cards/display/the-celeste-2.jpeg"
+      "frontend/src/assets/cards/display/the-celeste-1.jpeg",
+      "frontend/src/assets/cards/display/the-celeste-2.jpeg"
     ]
   },
   {
@@ -48,7 +48,7 @@
     "size": "5\" × 7\"",
     "material": "Handmade Deckle 350gsm",
     "images": [
-      "src/assets/cards/display/the-noa-1.jpeg"
+      "frontend/src/assets/cards/display/the-noa-1.jpeg"
     ]
   },
   {
@@ -60,8 +60,8 @@
     "size": "5\" × 7.5\"",
     "material": "Pearl Stock 300gsm",
     "images": [
-      "src/assets/cards/display/the-elodie-1.jpeg",
-      "src/assets/cards/display/the-elodie-2.jpeg"
+      "frontend/src/assets/cards/display/the-elodie-1.jpeg",
+      "frontend/src/assets/cards/display/the-elodie-2.jpeg"
     ],
     "variants": [
       {
@@ -90,8 +90,8 @@
     "size": "5\" × 7\"",
     "material": "Pearl Rag 300gsm",
     "images": [
-      "src/assets/cards/display/the-camille-1.jpeg",
-      "src/assets/cards/display/the-camille-2.jpeg"
+      "frontend/src/assets/cards/display/the-camille-1.jpeg",
+      "frontend/src/assets/cards/display/the-camille-2.jpeg"
     ]
   },
   {
@@ -103,8 +103,8 @@
     "size": "5\" × 7.5\"",
     "material": "Cotton Savoy 350gsm",
     "images": [
-      "src/assets/cards/display/the-aurelia-1.jpeg",
-      "src/assets/cards/display/the-aurelia-2.jpeg"
+      "frontend/src/assets/cards/display/the-aurelia-1.jpeg",
+      "frontend/src/assets/cards/display/the-aurelia-2.jpeg"
     ]
   },
   {
@@ -116,8 +116,8 @@
     "size": "5.5\" × 7.5\"",
     "material": "Cotton + Wax Seal",
     "images": [
-      "src/assets/cards/display/the-solene-1.jpeg",
-      "src/assets/cards/display/the-solene-2.jpeg"
+      "frontend/src/assets/cards/display/the-solene-1.jpeg",
+      "frontend/src/assets/cards/display/the-solene-2.jpeg"
     ],
     "variants": [
       {
@@ -141,8 +141,8 @@
     "size": "5\" × 7\"",
     "material": "Watercolour Rag 300gsm",
     "images": [
-      "src/assets/cards/display/the-rosea-1.jpeg",
-      "src/assets/cards/display/the-rosea-2.jpeg"
+      "frontend/src/assets/cards/display/the-rosea-1.jpeg",
+      "frontend/src/assets/cards/display/the-rosea-2.jpeg"
     ]
   },
   {
@@ -154,8 +154,8 @@
     "size": "5\" × 7\"",
     "material": "Linen Press 300gsm",
     "images": [
-      "src/assets/cards/display/the-lin-1.jpeg",
-      "src/assets/cards/display/the-lin-2.jpeg"
+      "frontend/src/assets/cards/display/the-lin-1.jpeg",
+      "frontend/src/assets/cards/display/the-lin-2.jpeg"
     ]
   },
   {
@@ -167,7 +167,7 @@
     "size": "5\" × 7.5\"",
     "material": "Cotton Savoy 350gsm",
     "images": [
-      "src/assets/cards/display/the-marguerite-1.jpeg"
+      "frontend/src/assets/cards/display/the-marguerite-1.jpeg"
     ]
   },
   {
@@ -179,8 +179,8 @@
     "size": "5\" × 7\"",
     "material": "Handmade Deckle 320gsm",
     "images": [
-      "src/assets/cards/display/the-fern-1.jpeg",
-      "src/assets/cards/display/the-fern-2.jpeg"
+      "frontend/src/assets/cards/display/the-fern-1.jpeg",
+      "frontend/src/assets/cards/display/the-fern-2.jpeg"
     ]
   },
   {
@@ -192,8 +192,8 @@
     "size": "5\" × 7.5\"",
     "material": "Cotton + Wax Seal",
     "images": [
-      "src/assets/cards/display/the-adelaide-1.jpeg",
-      "src/assets/cards/display/the-adelaide-2.jpeg"
+      "frontend/src/assets/cards/display/the-adelaide-1.jpeg",
+      "frontend/src/assets/cards/display/the-adelaide-2.jpeg"
     ],
     "variants": [
       {
@@ -217,7 +217,7 @@
     "size": "5\" × 7.5\"",
     "material": "Cotton Savoy 350gsm",
     "images": [
-      "src/assets/cards/display/the-verona-1.jpeg"
+      "frontend/src/assets/cards/display/the-verona-1.jpeg"
     ]
   },
   {
@@ -229,8 +229,8 @@
     "size": "5\" × 7\"",
     "material": "Pearl Rag 320gsm",
     "images": [
-      "src/assets/cards/display/the-pearl-1.jpeg",
-      "src/assets/cards/display/the-pearl-2.jpeg"
+      "frontend/src/assets/cards/display/the-pearl-1.jpeg",
+      "frontend/src/assets/cards/display/the-pearl-2.jpeg"
     ]
   }
 ]
