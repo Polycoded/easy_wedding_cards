@@ -1,5 +1,37 @@
 [
   {
+    "id": "ACRILIC",
+    "category": "The UHP Edit",
+    "price": 20,
+    "featured": false,
+    "size": "12 × 20 cm",
+    "material": "300 GSM Paper",
+    "description": "",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#515101",
+    "images": [
+      "frontend/src/assets/cards/display/acrilic-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/acrilic-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 5,
+        "material_id": 3,
+        "size": "12 × 20 cm",
+        "material": "300 GSM Paper",
+        "price": 20
+      }
+    ]
+  },
+  {
     "id": "test 5",
     "category": "The Portrait Edit",
     "price": 2,
