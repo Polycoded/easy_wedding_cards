@@ -1,5 +1,37 @@
 [
   {
+    "id": "D200",
+    "category": "The Floral Edit",
+    "price": 25,
+    "featured": true,
+    "size": "17 × 17 cm",
+    "material": "300 GSM Paper",
+    "description": "",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#ffffff",
+    "images": [
+      "frontend/src/assets/cards/display/d200-1.gif"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/d200-1.gif"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 1,
+        "material_id": 3,
+        "size": "17 × 17 cm",
+        "material": "300 GSM Paper",
+        "price": 25
+      }
+    ]
+  },
+  {
     "id": "BRIDE GROOM",
     "category": "The Portrait Edit",
     "price": 28,
