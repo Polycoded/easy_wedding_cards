@@ -1,5 +1,37 @@
 [
   {
+    "id": "101 F",
+    "category": "The Floral Edit",
+    "price": 0,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#ffd700",
+    "images": [
+      "frontend/src/assets/cards/display/101-f-1.gif"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/101-f-1.gif"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 0
+      }
+    ]
+  },
+  {
     "id": "100 G",
     "category": "The Traditional Edit",
     "price": 0,
