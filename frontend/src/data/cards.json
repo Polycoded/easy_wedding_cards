@@ -1,5 +1,37 @@
 [
   {
+    "id": "100 B",
+    "category": "The Book Edit",
+    "price": 0,
+    "featured": false,
+    "size": "15 × 21 cm",
+    "material": "300 GSM Paper",
+    "description": "",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#ffd700",
+    "images": [
+      "frontend/src/assets/cards/display/100-b-1.jpg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/100-b-1.jpg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 4,
+        "material_id": 3,
+        "size": "15 × 21 cm",
+        "material": "300 GSM Paper",
+        "price": 0
+      }
+    ]
+  },
+  {
     "id": "101 F",
     "category": "The Floral Edit",
     "price": 0,
