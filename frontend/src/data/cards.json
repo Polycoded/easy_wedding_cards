@@ -1,5 +1,37 @@
 [
   {
+    "id": "0002",
+    "category": "The Floral Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Blush Floral Charm",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#050505",
+    "images": [
+      "frontend/src/assets/cards/display/0002-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/0002-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Blush",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
     "id": "0001",
     "category": "The Floral Edit",
     "price": 30,
