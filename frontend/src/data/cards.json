@@ -328,5 +328,52 @@
       "frontend/src/assets/cards/display/the-pearl-1.jpeg",
       "frontend/src/assets/cards/display/the-pearl-2.jpeg"
     ]
+  },
+  {
+    "id": "system_options",
+    "sizes": [
+      {
+        "id": 1,
+        "label": "17 × 17 cm"
+      },
+      {
+        "id": 2,
+        "label": "19 × 19 cm"
+      },
+      {
+        "id": 3,
+        "label": "14 × 20 cm"
+      },
+      {
+        "id": 4,
+        "label": "15 × 21 cm"
+      },
+      {
+        "id": 5,
+        "label": "12 × 20 cm"
+      }
+    ],
+    "materials": [
+      {
+        "id": 1,
+        "label": "Texture Paper"
+      },
+      {
+        "id": 2,
+        "label": "Virgin Craft"
+      },
+      {
+        "id": 3,
+        "label": "300 GSM Paper"
+      },
+      {
+        "id": 4,
+        "label": "Ready Made Card"
+      },
+      {
+        "id": 5,
+        "label": "uhp sheet"
+      }
+    ]
   }
 ]
