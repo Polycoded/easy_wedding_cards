@@ -1,37 +1,5 @@
 [
   {
-    "id": "0004",
-    "category": "The Floral Edit",
-    "price": 30,
-    "featured": false,
-    "size": "19 × 19 cm",
-    "material": "300 GSM Paper",
-    "description": "Amal Kamala Lotus",
-    "applyWatermark": true,
-    "watermarkPos": "bottom-left",
-    "watermarkSize": "small",
-    "watermarkColor": "#000000",
-    "images": [
-      "frontend/src/assets/cards/display/0004-1.jpeg"
-    ],
-    "originals": [
-      "frontend/src/assets/cards/originals/0004-1.jpeg"
-    ],
-    "imageWatermarks": [
-      null
-    ],
-    "variants": [
-      {
-        "name": "Amal Kamala",
-        "size_id": 2,
-        "material_id": 3,
-        "size": "19 × 19 cm",
-        "material": "300 GSM Paper",
-        "price": 30
-      }
-    ]
-  },
-  {
     "id": "5000 UHP 1",
     "category": "The UHP Edit",
     "price": 30,
