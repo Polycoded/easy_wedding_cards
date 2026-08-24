@@ -1,5 +1,37 @@
 [
   {
+    "id": "Ethereal Garden Blooms",
+    "category": "The Vellum Edit",
+    "price": 26,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Ethereal Garden Blooms",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/ethereal-garden-blooms-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/ethereal-garden-blooms-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Ethereal Garden",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 26
+      }
+    ]
+  },
+  {
     "id": "Botanical Daisy",
     "category": "The Floral Edit",
     "price": 30,
