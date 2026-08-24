@@ -1,37 +1,5 @@
 [
   {
-    "id": "test 5",
-    "category": "The Portrait Edit",
-    "price": 2,
-    "featured": false,
-    "size": "12 × 20 cm",
-    "material": "300 GSM Paper",
-    "description": "hello desc",
-    "applyWatermark": true,
-    "watermarkPos": "center",
-    "watermarkSize": "medium",
-    "watermarkColor": "#ffd700",
-    "images": [
-      "frontend/src/assets/cards/display/test-5-1.jpeg"
-    ],
-    "originals": [
-      "frontend/src/assets/cards/originals/test-5-1.jpeg"
-    ],
-    "imageWatermarks": [
-      null
-    ],
-    "variants": [
-      {
-        "name": "small",
-        "size_id": 5,
-        "material_id": 3,
-        "size": "12 × 20 cm",
-        "material": "300 GSM Paper",
-        "price": 2
-      }
-    ]
-  },
-  {
     "id": "The Amara",
     "category": "The Heritage Edit",
     "price": 85,
