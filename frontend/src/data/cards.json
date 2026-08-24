@@ -1,5 +1,40 @@
 [
   {
+    "id": "5000 UHP 1",
+    "category": "The UHP Edit",
+    "price": 30,
+    "featured": false,
+    "size": "15 × 21 cm",
+    "material": "uhp sheet",
+    "description": "Luxury Navy UHP",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/5000-uhp-1-1.jpeg",
+      "frontend/src/assets/cards/display/5000-uhp-1-2.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/5000-uhp-1-1.jpeg",
+      "frontend/src/assets/cards/originals/5000-uhp-1-2.jpeg"
+    ],
+    "imageWatermarks": [
+      null,
+      null
+    ],
+    "variants": [
+      {
+        "name": "Postal Uhp",
+        "size_id": 4,
+        "material_id": 5,
+        "size": "15 × 21 cm",
+        "material": "uhp sheet",
+        "price": 30
+      }
+    ]
+  },
+  {
     "id": "0003",
     "category": "The Floral Edit",
     "price": 30,
