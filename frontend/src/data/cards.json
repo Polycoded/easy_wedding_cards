@@ -1,37 +1,5 @@
 [
   {
-    "id": "BRIDE GROOM",
-    "category": "The Portrait Edit",
-    "price": 28,
-    "featured": true,
-    "size": "19 × 19 cm",
-    "material": "300 GSM Paper",
-    "description": "",
-    "applyWatermark": true,
-    "watermarkPos": "bottom-left",
-    "watermarkSize": "medium",
-    "watermarkColor": "#ffffff",
-    "images": [
-      "frontend/src/assets/cards/display/bride-groom-1.jpg"
-    ],
-    "originals": [
-      "frontend/src/assets/cards/originals/bride-groom-1.jpg"
-    ],
-    "imageWatermarks": [
-      null
-    ],
-    "variants": [
-      {
-        "name": "",
-        "size_id": 2,
-        "material_id": 3,
-        "size": "19 × 19 cm",
-        "material": "300 GSM Paper",
-        "price": 28
-      }
-    ]
-  },
-  {
     "id": "ACRILIC",
     "category": "The UHP Edit",
     "price": 45,
