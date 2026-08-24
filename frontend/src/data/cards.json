@@ -1,5 +1,37 @@
 [
   {
+    "id": "Ethereal Marble & Botanical",
+    "category": "The Vellum Edit",
+    "price": 15,
+    "featured": false,
+    "size": "14 × 20 cm",
+    "material": "300 GSM Paper",
+    "description": "Ethereal Marble & Bottanical",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/ethereal-marble-&-botanical-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/ethereal-marble-&-botanical-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Ethereal Marble",
+        "size_id": 3,
+        "material_id": 3,
+        "size": "14 × 20 cm",
+        "material": "300 GSM Paper",
+        "price": 15
+      }
+    ]
+  },
+  {
     "id": "Ethereal Garden Blooms",
     "category": "The Vellum Edit",
     "price": 26,
