@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import cardsData from "../data/cards.json";
 
 export const PAGE_SIZE = 8;
-export const WHATSAPP_NUMBER = "919526577999";
+export const WHATSAPP_NUMBER = "9961663010";
 
 export const FALLBACK =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500' fill='%23ECE4D8'%3E%3Crect width='400' height='500'/%3E%3C/svg%3E";
