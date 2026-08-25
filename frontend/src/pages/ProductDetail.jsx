@@ -132,7 +132,7 @@ export default function ProductDetail() {
                 data-testid="detail-enlarge"
                 className="block w-full"
               >
-                <div className="relative aspect-[4/5] overflow-hidden bg-cream">
+                <div className="relative aspect-[1344/797] overflow-hidden bg-cream">
                   <img src={displayUrl(card.images[imageIdx])} alt={card.id} className="h-full w-full object-cover" />
                   <span className="absolute bottom-3 right-3 bg-ivory/85 px-3 py-1 font-sans text-[0.52rem] uppercase tracking-[0.16em] text-espresso">
                     Tap to enlarge
@@ -146,7 +146,7 @@ export default function ProductDetail() {
                       key={idx}
                       onClick={() => setImageIdx(idx)}
                       data-testid={`thumb-${idx}`}
-                      className={`h-24 w-20 overflow-hidden border transition-colors ${
+                      className={`w-24 aspect-[1344/797] overflow-hidden border transition-colors ${
                         idx === imageIdx ? "border-espresso" : "border-espresso/15 hover:border-espresso/40"
                       }`}
                     >
@@ -395,7 +395,7 @@ export default function ProductDetail() {
                     data-testid={`recent-${slugify(c.id)}`}
                     className="group shrink-0 w-28 sm:w-32"
                   >
-                    <div className="aspect-[4/5] overflow-hidden bg-beige">
+                    <div className="aspect-[1344/797] overflow-hidden bg-beige">
                       <img
                         src={thumbUrl(c.images[0])}
                         alt={c.id}
