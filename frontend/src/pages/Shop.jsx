@@ -172,7 +172,7 @@ export default function Shop() {
               <p className="mt-3 font-sans text-sm text-taupe">Try another category or clear your search.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-14 md:gap-y-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 md:gap-y-24">
               {page.map((c) => (
                 <ProductTile key={c.id} c={c} isFavorite={favorites.includes(c.id)} onToggleFavorite={toggle} />
               ))}

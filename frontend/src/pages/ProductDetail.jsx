@@ -120,7 +120,7 @@ export default function ProductDetail() {
           </nav>
 
           {/* Detail */}
-          <div className="mt-8 md:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="mt-8 md:mt-12 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-16 items-start">
             {/* Gallery */}
             <div className="lg:sticky lg:top-28">
               <button
@@ -369,7 +369,7 @@ export default function ProductDetail() {
               <h2 className="font-serif text-espresso text-4xl md:text-5xl leading-none mb-12">
                 More from <span className="italic">the collection.</span>
               </h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                 {similar.map((c) => (
                   <ProductTile
                     key={c.id}
@@ -393,7 +393,7 @@ export default function ProductDetail() {
                     key={c.id}
                     to={`/shop/${slugify(c.id)}`}
                     data-testid={`recent-${slugify(c.id)}`}
-                    className="group shrink-0 w-28 sm:w-32"
+                    className="group shrink-0 w-36 sm:w-44"
                   >
                     <div className="aspect-[1344/797] overflow-hidden bg-beige">
                       <img
