@@ -17,7 +17,7 @@ export const ProductTile = memo(function ProductTile({ c, isFavorite, onToggleFa
         data-testid={`${testidPrefix}-${slugify(c.id)}`}
         className="group block"
       >
-      <div className="relative overflow-hidden aspect-[4/5] bg-cream">
+      <div className="relative overflow-hidden aspect-[1344/797] bg-cream">
         <img
           src={thumbUrl(c.images[0])}
           alt={c.id}

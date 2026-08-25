@@ -120,7 +120,7 @@ export default function ProductDetail() {
           </nav>
 
           {/* Detail */}
-          <div className="mt-8 md:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="mt-8 md:mt-12 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-16 items-start">
             {/* Gallery */}
             <div className="lg:sticky lg:top-28">
               <button
@@ -132,7 +132,7 @@ export default function ProductDetail() {
                 data-testid="detail-enlarge"
                 className="block w-full"
               >
-                <div className="relative aspect-[4/5] overflow-hidden bg-cream">
+                <div className="relative aspect-[1344/797] overflow-hidden bg-cream">
                   <img src={displayUrl(card.images[imageIdx])} alt={card.id} className="h-full w-full object-cover" />
                   <span className="absolute bottom-3 right-3 bg-ivory/85 px-3 py-1 font-sans text-[0.52rem] uppercase tracking-[0.16em] text-espresso">
                     Tap to enlarge
@@ -146,7 +146,7 @@ export default function ProductDetail() {
                       key={idx}
                       onClick={() => setImageIdx(idx)}
                       data-testid={`thumb-${idx}`}
-                      className={`h-24 w-20 overflow-hidden border transition-colors ${
+                      className={`w-24 aspect-[1344/797] overflow-hidden border transition-colors ${
                         idx === imageIdx ? "border-espresso" : "border-espresso/15 hover:border-espresso/40"
                       }`}
                     >
@@ -369,7 +369,7 @@ export default function ProductDetail() {
               <h2 className="font-serif text-espresso text-4xl md:text-5xl leading-none mb-12">
                 More from <span className="italic">the collection.</span>
               </h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                 {similar.map((c) => (
                   <ProductTile
                     key={c.id}
@@ -393,9 +393,9 @@ export default function ProductDetail() {
                     key={c.id}
                     to={`/shop/${slugify(c.id)}`}
                     data-testid={`recent-${slugify(c.id)}`}
-                    className="group shrink-0 w-28 sm:w-32"
+                    className="group shrink-0 w-36 sm:w-44"
                   >
-                    <div className="aspect-[4/5] overflow-hidden bg-beige">
+                    <div className="aspect-[1344/797] overflow-hidden bg-beige">
                       <img
                         src={thumbUrl(c.images[0])}
                         alt={c.id}
