@@ -140,13 +140,13 @@ export default function ProductDetail() {
                 </div>
               </button>
               {card.images.length > 1 && (
-                <div className="mt-4 flex gap-3">
+                <div className="mt-4 grid grid-cols-3 gap-3">
                   {card.images.map((src, idx) => (
                     <button
                       key={idx}
                       onClick={() => setImageIdx(idx)}
                       data-testid={`thumb-${idx}`}
-                      className={`w-24 aspect-[1344/797] overflow-hidden border transition-colors ${
+                      className={`aspect-[4/3] overflow-hidden border transition-colors ${
                         idx === imageIdx ? "border-espresso" : "border-espresso/15 hover:border-espresso/40"
                       }`}
                     >

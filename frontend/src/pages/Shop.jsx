@@ -65,7 +65,7 @@ export default function Shop() {
       <Toaster />
 
       <main className="pt-28 md:pt-36">
-        <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-[1600px] px-5 sm:px-8 lg:px-12">
           {/* Intro */}
           <nav className="font-sans text-[0.6rem] uppercase tracking-[0.24em] text-taupe">
             <Link to="/" data-testid="breadcrumb-home" className="link-underline hover:text-espresso transition-colors">
@@ -90,7 +90,7 @@ export default function Shop() {
 
         {/* Sticky top filter bar */}
         <div className="sticky top-16 md:top-20 z-30 bg-ivory/90 backdrop-blur-md border-b border-espresso/10">
-          <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div className="mx-auto max-w-[1600px] px-5 sm:px-8 lg:px-12 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             {/* Category pills */}
             <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1 lg:mx-0 lg:px-0">
               {categories.map((c) => {
@@ -161,7 +161,7 @@ export default function Shop() {
         </div>
 
         {/* Grid */}
-        <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12 pt-10">
+        <div className="mx-auto max-w-[1600px] px-5 sm:px-8 lg:px-12 pt-10">
           <p className="font-sans text-[0.62rem] uppercase tracking-[0.2em] text-taupe mb-8" data-testid="results-count">
             {filtered.length} {filtered.length === 1 ? "invitation" : "invitations"}
           </p>
