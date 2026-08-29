@@ -1,5 +1,37 @@
 [
   {
+    "id": "Teal & Gold Imperial Peacock",
+    "category": "The Traditional Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Cover & Enclosure: Crafted on premium pearl-white cardstock, the cover showcases a centered peacock-art medallion highlighted by an ornate, laser-cut gold metallic monogram seal.",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#121212",
+    "images": [
+      "frontend/src/assets/cards/display/teal-&-gold-imperial-peacock-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/teal-&-gold-imperial-peacock-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
     "id": "Enchanted Forest",
     "category": "The Portrait Edit",
     "price": 30,
