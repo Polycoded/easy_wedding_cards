@@ -34,7 +34,7 @@
   {
     "id": "Ethereal Garden Blooms",
     "category": "The Vellum Edit",
-    "price": 26,
+    "price": 30,
     "featured": false,
     "size": "19 × 19 cm",
     "material": "300 GSM Paper",
@@ -59,7 +59,7 @@
         "material_id": 3,
         "size": "19 × 19 cm",
         "material": "300 GSM Paper",
-        "price": 26
+        "price": 30
       }
     ]
   },
