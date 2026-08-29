@@ -1,5 +1,37 @@
 [
   {
+    "id": "Luxury Champagne",
+    "category": "PASTEL",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "An elegant wedding invitation set featuring cream and champagne-gold tones, refined typography, traditional architectural artwork",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#303030",
+    "images": [
+      "frontend/src/assets/cards/display/luxury-champagne-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/luxury-champagne-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
     "id": "Ethereal Marble & Botanical",
     "category": "The Vellum Edit",
     "price": 15,
