@@ -1,5 +1,37 @@
 [
   {
+    "id": "Romantic Lakeside",
+    "category": "The Portrait Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "A beautifully illustrated wedding invitation featuring a serene lakeside village, church, mountains, and a couple in a boat. The elegant watercolor artwork is paired with refined typography and formal wedding details, creating a timeless, romantic, and sophisticated design.",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/romantic-lakeside-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/romantic-lakeside-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Romantic Lakeside",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
     "id": "Luxury Champagne",
     "category": "PASTEL",
     "price": 30,
