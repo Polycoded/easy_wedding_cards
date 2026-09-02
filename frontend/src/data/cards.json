@@ -1,5 +1,360 @@
 [
   {
+    "id": "Teal & Gold Imperial Peacock",
+    "category": "The Traditional Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Cover & Enclosure: Crafted on premium pearl-white cardstock, the cover showcases a centered peacock-art medallion highlighted by an ornate, laser-cut gold metallic monogram seal.",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#121212",
+    "images": [
+      "frontend/src/assets/cards/display/teal-&-gold-imperial-peacock-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/teal-&-gold-imperial-peacock-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Enchanted Forest",
+    "category": "The Portrait Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "An elegant wedding invitation featuring a romantic watercolor illustration of a bride and groom surrounded by lush evergreen forests and a charming countryside cottage. The refined cream palette and delicate typography create a timeless, intimate, and sophisticated wedding aesthetic.",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#1a1a1a",
+    "images": [
+      "frontend/src/assets/cards/display/enchanted-forest-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/enchanted-forest-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Romantic Lakeside",
+    "category": "The Portrait Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "A beautifully illustrated wedding invitation featuring a serene lakeside village, church, mountains, and a couple in a boat. The elegant watercolor artwork is paired with refined typography and formal wedding details, creating a timeless, romantic, and sophisticated design.",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/romantic-lakeside-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/romantic-lakeside-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Romantic Lakeside",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Luxury Champagne",
+    "category": "The Portrait Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "An elegant wedding invitation set featuring cream and champagne-gold tones, refined typography, traditional architectural artwork",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#303030",
+    "images": [
+      "frontend/src/assets/cards/display/luxury-champagne-1.png"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/luxury-champagne-1.png"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Ethereal Marble & Botanical",
+    "category": "The Vellum Edit",
+    "price": 15,
+    "featured": false,
+    "size": "14 × 20 cm",
+    "material": "300 GSM Paper",
+    "description": "Ethereal Marble & Bottanical",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/ethereal-marble-&-botanical-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/ethereal-marble-&-botanical-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Ethereal Marble",
+        "size_id": 3,
+        "material_id": 3,
+        "size": "14 × 20 cm",
+        "material": "300 GSM Paper",
+        "price": 15
+      }
+    ]
+  },
+  {
+    "id": "Ethereal Garden Blooms",
+    "category": "The Vellum Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Ethereal Garden Blooms",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/ethereal-garden-blooms-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/ethereal-garden-blooms-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Ethereal Garden",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Botanical Daisy",
+    "category": "The Floral Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Botanical Daisy Elegance Invitation",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#242424",
+    "images": [
+      "frontend/src/assets/cards/display/botanical-daisy-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/botanical-daisy-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Daisy Invitation",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Luxury Navy UHP",
+    "category": "The UHP Edit",
+    "price": 30,
+    "featured": false,
+    "size": "15 × 21 cm",
+    "material": "uhp sheet",
+    "description": "Luxury Navy UHP",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#000000",
+    "images": [
+      "frontend/src/assets/cards/display/5000-uhp-1-1.jpeg",
+      "frontend/src/assets/cards/display/5000-uhp-1-2.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/5000-uhp-1-1.jpeg",
+      "frontend/src/assets/cards/originals/5000-uhp-1-2.jpeg"
+    ],
+    "imageWatermarks": [
+      null,
+      null
+    ],
+    "variants": [
+      {
+        "name": "Postal Uhp",
+        "size_id": 4,
+        "material_id": 5,
+        "size": "15 × 21 cm",
+        "material": "uhp sheet",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Rustic Rose & Pine",
+    "category": "The Floral Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Rustic Rose & Pine",
+    "applyWatermark": true,
+    "watermarkPos": "top-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#fafafa",
+    "images": [
+      "frontend/src/assets/cards/display/0003-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/0003-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Rustic Rose",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Blush Floral Charm",
+    "category": "The Floral Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Blush Floral Charm",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "medium",
+    "watermarkColor": "#050505",
+    "images": [
+      "frontend/src/assets/cards/display/0002-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/0002-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Blush",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
+    "id": "Golden Freesia Elegance",
+    "category": "The Floral Edit",
+    "price": 30,
+    "featured": false,
+    "size": "19 × 19 cm",
+    "material": "300 GSM Paper",
+    "description": "Golden Freesia Elegance",
+    "applyWatermark": true,
+    "watermarkPos": "bottom-left",
+    "watermarkSize": "small",
+    "watermarkColor": "#050505",
+    "images": [
+      "frontend/src/assets/cards/display/0001-1.jpeg"
+    ],
+    "originals": [
+      "frontend/src/assets/cards/originals/0001-1.jpeg"
+    ],
+    "imageWatermarks": [
+      null
+    ],
+    "variants": [
+      {
+        "name": "Freesia",
+        "size_id": 2,
+        "material_id": 3,
+        "size": "19 × 19 cm",
+        "material": "300 GSM Paper",
+        "price": 30
+      }
+    ]
+  },
+  {
     "id": "The Amara",
     "category": "The Heritage Edit",
     "price": 85,
@@ -231,6 +586,53 @@
     "images": [
       "frontend/src/assets/cards/display/the-pearl-1.jpeg",
       "frontend/src/assets/cards/display/the-pearl-2.jpeg"
+    ]
+  },
+  {
+    "id": "system_options",
+    "sizes": [
+      {
+        "id": 1,
+        "label": "17 × 17 cm"
+      },
+      {
+        "id": 2,
+        "label": "19 × 19 cm"
+      },
+      {
+        "id": 3,
+        "label": "14 × 20 cm"
+      },
+      {
+        "id": 4,
+        "label": "15 × 21 cm"
+      },
+      {
+        "id": 5,
+        "label": "12 × 20 cm"
+      }
+    ],
+    "materials": [
+      {
+        "id": 1,
+        "label": "Texture Paper"
+      },
+      {
+        "id": 2,
+        "label": "Virgin Craft"
+      },
+      {
+        "id": 3,
+        "label": "300 GSM Paper"
+      },
+      {
+        "id": 4,
+        "label": "Ready Made Card"
+      },
+      {
+        "id": 5,
+        "label": "uhp sheet"
+      }
     ]
   }
 ]
