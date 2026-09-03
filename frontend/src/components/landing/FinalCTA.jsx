@@ -3,7 +3,7 @@ import { Reveal } from "./motion";
 
 export const FinalCTA = () => {
   return (
-    <section data-testid="final-cta-section" className="bg-espresso text-cream py-28 md:py-40 overflow-hidden">
+    <section data-testid="final-cta-section" data-gsap-scene="final" className="bg-espresso text-cream py-28 md:py-40 overflow-hidden">
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-16 items-center">
           {/* Text */}
@@ -52,7 +52,7 @@ export const FinalCTA = () => {
 
           {/* Photograph */}
           <Reveal delay={0.1} className="lg:col-span-6 order-1 lg:order-2">
-            <div className="relative overflow-hidden aspect-[4/3] lg:aspect-[5/6]">
+            <div data-gsap-media className="relative overflow-hidden aspect-[4/3] lg:aspect-[5/6]">
               <img
                 src={IMAGES.finalHeld}
                 alt="Hands gently holding an ivory wedding invitation over a softly styled table"

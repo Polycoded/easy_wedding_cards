@@ -3,11 +3,11 @@ import { Reveal } from "./motion";
 
 export const GiftsTeaser = () => {
   return (
-    <section data-testid="gifts-section" className="bg-cream py-24 md:py-32">
+    <section data-testid="gifts-section" data-gsap-scene="gifts" className="bg-cream py-24 md:py-32">
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <Reveal className="lg:col-span-7 order-1">
-            <div className="relative overflow-hidden aspect-[16/10] group">
+            <div data-gsap-media className="relative overflow-hidden aspect-[16/10] group">
               <img
                 src={IMAGES.gifts}
                 alt="An elegantly wrapped wedding gift in ivory and champagne paper with silk ribbon"

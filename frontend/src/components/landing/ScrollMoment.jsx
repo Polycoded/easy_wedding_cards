@@ -13,6 +13,7 @@ const Line = ({ progress, range, strong, children, reduce }) => {
   return (
     <motion.p
       style={reduce ? undefined : { opacity, y }}
+      data-gsap-line
       className={
         strong
           ? "font-serif italic text-espresso leading-[1] text-4xl sm:text-6xl lg:text-7xl"
@@ -36,6 +37,7 @@ export const ScrollMoment = () => {
     <section
       ref={ref}
       data-testid="scroll-moment"
+      data-gsap-scene="moment"
       className="relative bg-ivory py-28 md:py-40 lg:py-48"
     >
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">

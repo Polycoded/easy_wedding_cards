@@ -99,7 +99,7 @@ export const Hero = () => {
               transition={{ duration: 1.4, ease: EASE, delay: 0.05 }}
               className="relative lg:-mr-12 xl:-mr-20"
             >
-              <div className="relative overflow-hidden aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] xl:aspect-[5/6]">
+              <div data-gsap-hero-media className="relative overflow-hidden aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] xl:aspect-[5/6]">
                 <motion.img
                   src={IMAGES.hero}
                   alt="A luxury wedding invitation suite on warm ivory linen in soft daylight"
