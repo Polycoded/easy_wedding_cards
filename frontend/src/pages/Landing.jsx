@@ -21,7 +21,7 @@ export default function Landing() {
     if (reduce) return;
 
     const lenis = new Lenis({
-      duration: 1.1,
+      duration: 0.82,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       touchMultiplier: 1.5,
@@ -65,19 +65,18 @@ export default function Landing() {
             pin: true,
             pinSpacing: true,
             anticipatePin: 1,
-            scrub: 1,
+            scrub: 0.55,
           },
         });
 
         moment
           .fromTo(
             lines,
-            { autoAlpha: 0.12, y: 90, scale: 0.92, filter: "blur(18px)" },
+            { autoAlpha: 0.12, y: 72, scale: 0.94 },
             {
               autoAlpha: 1,
               y: 0,
               scale: 1,
-              filter: "blur(0px)",
               stagger: 0.28,
               duration: 1.4,
               ease: "power3.out",
@@ -87,25 +86,10 @@ export default function Landing() {
             autoAlpha: 0.18,
             y: -80,
             scale: 1.08,
-            filter: "blur(10px)",
             stagger: 0.14,
             duration: 0.9,
             ease: "power2.inOut",
           });
-
-        const collection = rootRef.current.querySelector('[data-gsap-scene="collection"]');
-        const collectionHeading = rootRef.current.querySelector("[data-gsap-collection-heading]");
-
-        if (collection && collectionHeading) {
-          ScrollTrigger.create({
-            trigger: collection,
-            start: "top 18%",
-            end: "bottom 64%",
-            pin: collectionHeading,
-            pinSpacing: false,
-            anticipatePin: 1,
-          });
-        }
 
         return undefined;
       });
@@ -116,12 +100,11 @@ export default function Landing() {
         lines.forEach((line, index) => {
           gsap.fromTo(
             line,
-            { opacity: 0.12, y: 54, scale: 0.94, filter: "blur(12px)" },
+            { opacity: 0.12, y: 42, scale: 0.96 },
             {
               opacity: 1,
               y: 0,
               scale: 1,
-              filter: "blur(0px)",
               ease: "none",
               scrollTrigger: {
                 trigger: line,
@@ -138,7 +121,6 @@ export default function Landing() {
 
       mm.add("(min-width: 1px)", () => {
         const mediaFrames = gsap.utils.toArray("[data-gsap-media]", rootRef.current);
-        const heroMedia = rootRef.current.querySelector("[data-gsap-hero-media]");
         const scenes = gsap.utils.toArray("[data-gsap-scene]", rootRef.current);
         const vignette = rootRef.current.querySelector("[data-gsap-vignette]");
         const topBar = rootRef.current.querySelector("[data-gsap-cinema-bar='top']");
@@ -151,9 +133,9 @@ export default function Landing() {
 
           gsap.fromTo(
             scene,
-            { filter: "brightness(0.88) saturate(0.9)" },
+            { autoAlpha: 0.92 },
             {
-              filter: "brightness(1) saturate(1)",
+              autoAlpha: 1,
               ease: "none",
               scrollTrigger: {
                 trigger: scene,
@@ -202,18 +184,6 @@ export default function Landing() {
             }
           );
         });
-
-        if (heroMedia) {
-          gsap.timeline({
-            scrollTrigger: {
-              trigger: heroMedia,
-              start: "top top",
-              end: "bottom top",
-              scrub: true,
-            },
-          })
-            .to(heroMedia, { yPercent: 16, scale: 0.94, rotate: -0.65, ease: "none" }, 0);
-        }
 
         if (vignette) {
           gsap.timeline({

@@ -90,10 +90,9 @@ export const Collection = () => {
 
       gsap.fromTo(
         sectionRef.current.querySelector("[data-collection-cinema]"),
-        { clipPath: "inset(14% 6%)", filter: "brightness(0.92) saturate(0.88)" },
+        { clipPath: "inset(14% 6%)" },
         {
           clipPath: "inset(0% 0%)",
-          filter: "brightness(1) saturate(1)",
           ease: "none",
           scrollTrigger: {
             trigger: sectionRef.current,
@@ -135,8 +134,7 @@ export const Collection = () => {
             delay={0.12}
             className="mt-8 font-sans font-light text-base md:text-lg text-taupe max-w-xl leading-relaxed"
           >
-            Invitations for celebrations that are intimate, grand, timeless, modern — and
-            entirely yours.
+            Invitations for celebrations that are intimate, grand, timeless, modern - and entirely yours.
           </Reveal>
         </div>
 

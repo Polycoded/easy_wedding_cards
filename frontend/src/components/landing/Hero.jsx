@@ -1,23 +1,10 @@
-import { useRef } from "react";
-import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { IMAGES } from "../../data/landing";
 
 const EASE = [0.22, 1, 0.36, 1];
 
 export const Hero = () => {
-  const ref = useRef(null);
   const reduce = useReducedMotion();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  // The single scroll moment: image drifts slower + scales subtly (1.00 -> 1.035),
-  // typography lifts a touch faster than the photograph.
-  const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.035]);
-  const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "8%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "-16%"]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   const container = {
     hidden: {},
@@ -34,7 +21,6 @@ export const Hero = () => {
 
   return (
     <section
-      ref={ref}
       data-testid="hero-section"
       className="relative min-h-screen w-full bg-ivory overflow-hidden"
     >
@@ -42,7 +28,6 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 min-h-screen items-center gap-10 lg:gap-8 pt-28 pb-20 lg:py-0">
           {/* Typography */}
           <motion.div
-            style={reduce ? undefined : { y: textY, opacity: textOpacity }}
             className="lg:col-span-5 order-2 lg:order-1"
           >
             <motion.div variants={container} initial="hidden" animate="show">
@@ -103,7 +88,6 @@ export const Hero = () => {
                 <motion.img
                   src={IMAGES.hero}
                   alt="A luxury wedding invitation suite on warm ivory linen in soft daylight"
-                  style={reduce ? undefined : { scale: imgScale, y: imgY }}
                   className="absolute inset-0 h-full w-full object-cover will-change-transform"
                   loading="eager"
                 />
